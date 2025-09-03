@@ -1,0 +1,398 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  height: 100vh;
+}
+
+.extras {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  font-size: 10px;
+  align-items: center;
+}
+
+.extras>h1 {
+  position: relative;
+  margin-bottom: -15px;
+}
+
+.selector-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.selector-container>span {
+  font-size: 8px;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-bottom: -5px;
+}
+
+.selector-container>.menu-selector {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu-selector>.contador {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+  margin-bottom: 2px;
+}
+
+.switch-3 {
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 50px;
+  height: 17px;
+  border-radius: 20px;
+  overflow: hidden;
+  user-select: none;
+  cursor: pointer;
+}
+
+.switch-3 input {
+  display: none;
+}
+
+.switch-3 label {
+  text-align: center;
+  line-height: 40px;
+  font-family: sans-serif;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.slider {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: transform 0.4s ease;
+  z-index: 1;
+  top: 4px;
+  left: 4px;
+}
+
+/* Posiciones del slider según opción */
+#opt1:checked~.slider {
+  transform: translateX(0px);
+}
+
+#opt2:checked~.slider {
+  transform: translateX(16px);
+}
+
+#opt3:checked~.slider {
+  transform: translateX(32px);
+}
+
+.calculator-display {
+  border: none;
+  border-radius: 8px;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem;
+  text-align: right;
+  grid-column: span 4;
+  width: 350px;
+  height: 80px;
+  min-height: 40px;
+  margin: 20px auto;
+}
+
+.calculator-buttons {
+  border-radius: 8px;
+  padding: 2rem;
+  width: 350px;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.button {
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover,
+.del:hover,
+.reset:hover,
+.equal:hover {
+  transform: scale(1.015);
+  transition: all 0.2s ease;
+}
+
+.del {
+  font-size: 1rem;
+}
+
+.reset {
+  grid-column: span 2;
+  font-size: 1rem;
+}
+
+.equal {
+  grid-column: span 2;
+}
+
+
+/*Coloreessss nada mas*/
+/* #colores base */
+
+body.base {
+  background-color: #3a4764;
+  color: white;
+}
+
+.selector-container>span.base {
+  color: #ffffff;
+}
+
+.switch-3.base {
+  background: #232c43;
+}
+
+.slider.base {
+  background: #d03f2f;
+}
+
+.calculator-display.base {
+  background-color: #171d2c;
+  color: white;
+}
+
+.calculator-buttons.base {
+  background-color: #232c43;
+}
+
+.button.base {
+  background-color: #eae3db;
+  color: #232c43d7;
+  box-shadow: 0 4px #b4a597;
+}
+
+.del.base {
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0 4px #4e5875;
+  color: white;
+}
+
+.reset.base {
+  background-color: #637097;
+  box-shadow: 0 4px #4e5875;
+  color: white;
+}
+
+.equal.base {
+  background-color: #d03f2f;
+  box-shadow: 0 4px #88291e;
+  color: white;
+}
+
+/* #colores light */
+
+body.light {
+  background-color: #e2e2e1;
+  color: #232c43;
+}
+
+.selector-container>span.light {
+  color: #232c43;
+}
+
+.switch-3.light {
+  background: #c7c4c3;
+}
+
+.slider.light {
+  background: #f98b3c;
+}
+
+.calculator-display.light {
+  background-color: #ededed;
+  color: #232c43d7;
+}
+
+.calculator-buttons.light {
+  background-color: #c7c4c3;
+}
+
+.button.light {
+  background-color: #eae3db;
+  color: #232c43d7;
+  box-shadow: 0 4px #b4a597;
+}
+
+.del.light {
+  background-color: #69acb0;
+  box-shadow: 0 4px #437072;
+  color: white;
+}
+
+.reset.light {
+  background-color: #69acb0;
+  box-shadow: 0 4px #437072;
+  color: white;
+}
+
+.equal.light {
+  background-color: #f98b3c;
+  box-shadow: 0 4px #a45c28;
+  color: white;
+}
+
+/* #colores lile */
+
+body.lile {
+  background-color: #15052d;
+  color: #c3b218;
+}
+
+.selector-container>span.lile {
+  color: #c3b218;
+}
+
+.switch-3.lile {
+  background: #341b4c;
+}
+
+.slider.lile {
+  background: #6febe5;
+}
+
+.calculator-display.lile {
+  background-color: #1c093b;
+  color: #c3b218;
+}
+
+.calculator-buttons.lile {
+  background-color: #1c093b;
+}
+
+.button.lile {
+  background-color: #341b4c;
+  color: #c3b218;
+  box-shadow: 0 4px #7e32ae;
+}
+
+.del.lile {
+  background-color: #6f2587;
+  box-shadow: 0 4px #7e32ae;
+  color: white;
+}
+
+.reset.lile {
+  background-color: #6f2587;
+  box-shadow: 0 4px #7e32ae;
+  color: white;
+}
+
+.equal.lile {
+  background-color: #6febe5;
+  box-shadow: 0 4px #76e6e0;
+  color: black;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 400px) {
+  body {
+    padding: 1.5rem;
+    height: 100vh;
+  }
+
+  .extras {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .extras > h1 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+  }
+
+  .switch-3 {
+    width: 65px;
+    height: 30px;
+  }
+
+  .slider {
+    width: 20px;
+    height: 20px;
+   }  
+  #opt1:checked~.slider {
+  transform: translateX(2px);
+}
+
+#opt2:checked~.slider {
+  transform: translateX(18px);
+}
+
+#opt3:checked~.slider {
+  transform: translateX(34px);
+}
+
+  .calculator-display,
+  .calculator-buttons {
+    width: 100%;
+  }
+
+  .calculator-buttons {
+    height: 60vh;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px
+  }
+}
+
+@media screen and (max-width: 300px) {
+  body {
+    padding: 1.5rem;
+    height: 100vh;
+  }
+
+  .extras {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .extras > h1 {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+  }
+
+  .extras > 
+
+  .calculator-display,
+  .calculator-buttons {
+    width: 100%;
+  }
+
+  .calculator-buttons {
+    height: 60vh;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px
+  }
+}
