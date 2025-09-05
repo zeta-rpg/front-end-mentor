@@ -1,7 +1,7 @@
 let numeros = document.getElementsByClassName('button');
 let screen = document.getElementsByClassName('calculator-display')[0];
 
-
+// Recorremos los botones y les añadimos un evento 
 Array.from(numeros).forEach(boton => {
     boton.addEventListener('click', () => {
         let valor = boton.textContent;

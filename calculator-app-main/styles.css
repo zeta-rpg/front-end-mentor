@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Spartan', sans-serif;
+  font-family: "Spartan", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +23,7 @@ body {
   align-items: center;
 }
 
-.extras>h1 {
+.extras > h1 {
   position: relative;
   margin-bottom: -15px;
 }
@@ -34,20 +34,20 @@ body {
   gap: 1rem;
 }
 
-.selector-container>span {
+.selector-container > span {
   font-size: 8px;
   font-weight: 600;
   margin-top: 0.5rem;
   margin-bottom: -5px;
 }
 
-.selector-container>.menu-selector {
+.selector-container > .menu-selector {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.menu-selector>.contador {
+.menu-selector > .contador {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -91,15 +91,15 @@ body {
 }
 
 /* Posiciones del slider según opción */
-#opt1:checked~.slider {
+#opt1:checked ~ .slider {
   transform: translateX(0px);
 }
 
-#opt2:checked~.slider {
+#opt2:checked ~ .slider {
   transform: translateX(16px);
 }
 
-#opt3:checked~.slider {
+#opt3:checked ~ .slider {
   transform: translateX(32px);
 }
 
@@ -157,7 +157,6 @@ body {
   grid-column: span 2;
 }
 
-
 /*Coloreessss nada mas*/
 /* #colores base */
 
@@ -166,7 +165,7 @@ body.base {
   color: white;
 }
 
-.selector-container>span.base {
+.selector-container > span.base {
   color: #ffffff;
 }
 
@@ -218,7 +217,7 @@ body.light {
   color: #232c43;
 }
 
-.selector-container>span.light {
+.selector-container > span.light {
   color: #232c43;
 }
 
@@ -270,7 +269,7 @@ body.lile {
   color: #c3b218;
 }
 
-.selector-container>span.lile {
+.selector-container > span.lile {
   color: #c3b218;
 }
 
@@ -341,18 +340,18 @@ body.lile {
   .slider {
     width: 20px;
     height: 20px;
-   }  
-  #opt1:checked~.slider {
-  transform: translateX(2px);
-}
+  }
+  #opt1:checked ~ .slider {
+    transform: translateX(2px);
+  }
 
-#opt2:checked~.slider {
-  transform: translateX(18px);
-}
+  #opt2:checked ~ .slider {
+    transform: translateX(18px);
+  }
 
-#opt3:checked~.slider {
-  transform: translateX(34px);
-}
+  #opt3:checked ~ .slider {
+    transform: translateX(34px);
+  }
 
   .calculator-display,
   .calculator-buttons {
@@ -362,7 +361,7 @@ body.lile {
   .calculator-buttons {
     height: 60vh;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px
+    gap: 15px;
   }
 }
 
@@ -383,9 +382,7 @@ body.lile {
     margin-bottom: 15px;
   }
 
-  .extras > 
-
-  .calculator-display,
+  .extras > .calculator-display,
   .calculator-buttons {
     width: 100%;
   }
@@ -393,6 +390,6 @@ body.lile {
   .calculator-buttons {
     height: 60vh;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px
+    gap: 15px;
   }
 }

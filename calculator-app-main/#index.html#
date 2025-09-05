@@ -62,7 +62,10 @@
       </div>
     </div>
   </main>
- <script src="main.js"></script>
+  <footer>
+    Copyright (c) 2025 j. All Rights Reserved.
+  </footer>
+  <script src="main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,94 @@
+/* Importar fuentes locales */
+@font-face {
+  font-family: "Inter";
+  src:
+    url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format("woff2"),
+    url("./assets/fonts/Inter-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Si tienes más variantes, repite el bloque @font-face cambiando font-weight y src */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Aplicar la fuente */
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #151515;
+}
+
+.card {
+  background-color: #1f1f1f;
+  border-radius: 5px;
+  width: 342px;
+  height: 530px;
+  text-align: center;
+  padding: 20px;
+}
+.card-header > img {
+  width: 74px;
+  border-radius: 50%;
+  margin-top: 18px;
+}
+.card-header-info {
+  margin-top: 15px;
+  line-height: 1.8;
+}
+
+.card-header-name {
+  color: #ececec;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card-header-location {
+  color: #9bb542;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.card-body-quote {
+  color: #ececec99;
+  font-size: 10px;
+  margin-top: 15px;
+}
+
+.card-body-socials {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 274px;
+  height: 272px;
+  padding-left: 15px;
+}
+
+.card-body-socials a {
+  text-decoration: none;
+  color: #ececec;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 13px;
+  border-radius: 5px;
+  width: 275px;
+  height: 40px;
+  background-color: #2a2a2a;
+}
+
+@media and screen (max-width: 400px) {
+  .card {
+    width: 90%;
+    height: auto;
+  }
+}
